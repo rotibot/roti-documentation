@@ -1,0 +1,8 @@
+{
+  "label": "Basic Configuration",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "This category highlights essential features for configuring R.O.T.I bot. These features include configuring welcome messages, setting up starboard, creating memechannel, and setting up logs. By leveraging these key features, users can quickly set up and streamline R.O.T.I bot to better manage their Discord server. This category serves as a comprehensive guide to help users maximize the functionality of R.O.T.I and create a more efficient Discord server experience."
+  }
+}

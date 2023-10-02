@@ -1,0 +1,8 @@
+{
+  "label": "Configuration",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "The Configuration category allow you to customize various settings for your server. These settings include the server prefix, welcome messages, starboard configuration, meme channel settings, and mod role management."
+  }
+}

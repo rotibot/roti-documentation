@@ -1,0 +1,99 @@
+---
+sidebar_position: 2
+---
+
+# Server Management
+
+The Server Management subcategory includes commands for configuring and customizing server settings, tracking server activity through logs, and managing interactions with users through suggestions and tickets.
+
+## Configuration
+
+<details style={{ backgroundColor: '#101013', borderColor: 'white' }}>
+  <summary>Click here to expand</summary>
+
+| Command             | Description                                                         | Usage                                           |
+| ------------------- | ------------------------------------------------------------------- | ----------------------------------------------- | --- |
+| /welcome            | Set up a welcome message for new members                            | `/welcome`                                      |
+| /mediaonly on       | Enable media-only mode for a channel                                | `/mediaonly on [channel]`                       |
+| /mediaonly off      | Disable media-only mode for a channel                               | `/mediaonly off [channel]`                      |
+| /mediaonly list     | Displays a list of media-only channels                              | `/mediaonly list`                               |
+| /linkonly on        | Enable link-only mode for a channel                                 | `/linkonly on [channel]`                        |
+| /linkonly off       | Disable link-only mode for a channel                                | `/linkonly off [channel]`                       |
+| /linkonly list      | Displays a list of link-only channels                               | `/linkonly list`                                |     |
+| /prefix add         | Add a new custom prefix for your server                             | `/prefix add [prefix]`                          |
+| /prefix remove      | Remove a custom prefix from your server                             | `/prefix remove [prefix]`                       |
+| /prefix list        | List all custom prefixes on your server                             | `/prefix list`                                  |
+| /modrole set        | Sets the role required to use moderation commands                   | `/modrole set [role]`                           |
+| /modrole remove     | Removes the current moderation role                                 | `/modrole remove`                               |
+| /modrole view       | Displays the current moderation role                                | `/modrole view`                                 |
+| /starboard set      | Sets the channel where starred messages will be posted              | `/starboard set [channel] [threshold]`          |
+| /starboard enable   | Enable Starboard channel                                            | `/starboard enable`                             |
+| /starboard disable  | Disable Starboard channel                                           | `/starboard disable`                            |
+| /starboard ignore   | Add/Remove a specific channel from being monitored by the starboard | `/starboard ignore [channel]`                   |
+| /memechannel set    | Set a channel for automatic posting of memes                        | `/memechannel set [channel] [nsfw] [subreddit]` |
+| /memechannel remove | Remove the meme channel from your server                            | `/memechannel remove`                           |
+
+</details>
+
+## Logs
+
+<details style={{ backgroundColor: '#101013', borderColor: 'white' }}>
+  <summary>Click here to expand</summary>
+
+| Command | Description                                   | Usage  |
+| ------- | --------------------------------------------- | ------ |
+| /log    | Configure logging of various events of server | `/log` |
+
+</details>
+
+## Suggestion
+
+<details style={{ backgroundColor: '#101013', borderColor: 'white' }}>
+  <summary>Click here to expand</summary>
+
+| Command             | Description                                              | Usage                                 |
+| ------------------- | -------------------------------------------------------- | ------------------------------------- |
+| /suggest            | Submit a suggestion for the server                       | `/suggest [image] [anonymous]`        |
+| /suggestion accept  | Accept a suggestion                                      | `/suggestion accept [suggestion id]`  |
+| /suggestion decline | Decline a suggestion                                     | `/suggestion decline [suggestion id]` |
+| /suggestion config  | Configure the suggestion system settings                 | `/suggestion config`                  |
+| /suggestion set     | Set the suggestion channel for server                    | `/suggestion set [channel]`           |
+| /suggestion user    | Display the user associated with a particular suggestion | `/suggestion user [suggestion id]`    |
+
+</details>
+
+## Ticket
+
+<details style={{ backgroundColor: '#101013', borderColor: 'white' }}>
+  <summary>Click here to expand</summary>
+
+| Command             | Description                                       | Usage                               |
+| ------------------- | ------------------------------------------------- | ----------------------------------- |
+| /ticket setup       | Sets up the support ticket system                 | `/ticket setup [channel]`           |
+| /ticket config      | Configures the support ticket system              | `/ticket config`                    |
+| /ticket add         | Add a user or role to support ticket              | `/ticket add [target] [channel]`    |
+| /ticket remove      | Remove a user or role from support ticket         | `/ticket remove [target] [channel]` |
+| /ticket close       | Closes an open support ticket                     | `/ticket close [channel] [reason]`  |
+| /ticket rename      | Renames an existing support ticket                | `/ticket rename [name] [channel]`   |
+| /ticket stats       | Displays statistics for the support ticket system | `/ticket stats`                     |
+| /ticket leaderboard | Shows the top users with the most closed tickets  | `/ticket leaderboard`               |
+
+</details>
+
+## Tags & Triggers
+
+<details style={{ backgroundColor: '#101013', borderColor: 'white' }}>
+  <summary>Click here to expand</summary>
+
+| Command         | Description                      | Usage                                  |
+| --------------- | -------------------------------- | -------------------------------------- |
+| /tag create     | Create or edit existing tags     | `/tag create [name] [embed] [modonly]` |
+| /tag delete     | Delete an existing tag           | `/tag delete [name]`                   |
+| /tag list       | List all available tags          | `/tag list`                            |
+| /tag info       | Get information about a tag      | `/tag info [name]`                     |
+| /trigger create | Create or edit existing triggers | `/trigger create [name] [wildcard]`    |
+| /trigger delete | Delete an existing trigger       | `/trigger delete [name]`               |
+| /trigger list   | List all available triggers      | `/trigger list`                        |
+| /trigger info   | Get information about a trigger  | `/trigger info [name]`                 |
+
+</details>
