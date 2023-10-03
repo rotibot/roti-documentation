@@ -1,6 +1,5 @@
 # These are supported funding model platforms
 
-github: [rotibot]
-patreon: [rotibot]
-ko_fi: [rotibot]
+patreon: rotibot
+ko_fi: rotibot
 custom: ["https://paypal.me/itspsychotic"]
