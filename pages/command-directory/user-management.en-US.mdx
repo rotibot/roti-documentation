@@ -1,0 +1,88 @@
+# User Management
+
+The User Management subcategory comprises commands for managing users on the server, including tools for automated moderation, role assignment, and reporting.
+
+## Moderation
+
+<details>
+  <summary>Click here to expand</summary>
+
+| Command             | Description                                                        | Usage                                                       |
+| ------------------- | ------------------------------------------------------------------ | ----------------------------------------------------------- |
+| /ban                | Ban a user from the server even if they are not currently a member | `/ban [user] [delete_message_days] [reason]`                |
+| /case               | Get information about a specific case                              | `/case [user] [log_id]`                                     |
+| /clearwarns         | Delete all warnings of a user                                      | `/clearwarns [user]`                                        |
+| /decancer           | Removes zalgo characters from a user's name                        | `/decancer [user]`                                          |
+| /delwarn            | Deletes a warning from user record                                 | `/delwarn [user] [warning_id]`                              |
+| /duration           | Change the duration of a mute/ban                                  | `/duration [user] [duration]`                               |
+| /emoji add          | Add custom emoji to your server                                    | `/emoji add [emoji] [name]`                                 |
+| /emoji addmany      | Add multiple custom emojis to the server                           | `/emoji addmany [emojis]`                                   |
+| /emoji pack         | Search and add emojis from emoji.gg                                | `/emoji pack [search]`                                      |
+| /emoji list         | List all the emojis currently available on your server             | `/emoji list [search]`                                      |
+| /kick               | Kick a member from the server                                      | `/kick [user] [reason]`                                     |
+| /lock               | Lock a channel to prevent messages from being sent                 | `/lock [channel] [target] [duration]`                       |
+| /massban            | Ban multiple users from the server                                 | `/massban [users] [reason] [delete_message_days]`           |
+| /modlogs            | Displays moderation logs for a user                                | `/modlogs [user]`                                           |
+| /nickname           | Change the nickname of a user                                      | `/nickname [user] [nickname]`                               |
+| /note set           | Set note for a specific user                                       | `/note set [user] [note]`                                   |
+| /note list          | Displays a list of all notes                                       | `/note list`                                                |
+| /note clear         | Clear all notes for a specific user                                | `/note clear [user]`                                        |
+| /note get           | Get all notes for a specific user                                  | `/note get [user]`                                          |
+| /note remove        | Remove note(s) for a specific user                                 | `/note remove [user] [note_id]`                             |
+| /note removeall     | Remove all your notes                                              | `/note removeall`                                           |
+| /permission enable  | Enable a message command for a channel                             | `/permission enable [command] [channel]`                    |
+| /permission disable | Disable a message command for a channel                            | `/permission disable [command] [channel]`                   |
+| /purge              | Delete a specified number of messages from a channel               | `/purge [amount] [options]`                                 |
+| /reason             | Change the reason of a moderation action                           | `/reason [user] [log_id] [reason]`                          |
+| /removetimeout      | Remove timeout from a user                                         | `/removetimeout [user]`                                     |
+| /timeout            | Timeout a user for a certain amount of time                        | `/timeout [user] [duration] [reason]`                       |
+| /say                | Sends your message from anyone to anywhere                         | `/say [text] [channel] [user]`                              |
+| /slowmode           | Set slowmode for a channel                                         | `/slowmode [time] [channel] [reason] [duration]`            |
+| /softban            | Softban a user from the server                                     | `/softban [user] [delete_message_days] [reason]`            |
+| /sticker add        | Add a custom sticker to the server                                 | `/sticker add [url] [name] [tags] [description]`            |
+| /tempban            | Temporarily ban a user from the server                             | `/tempban [user] [duration] [delete_message_days] [reason]` |
+| /unban              | Unban a member from the server                                     | `/unban [user] [reason]`                                    |
+| /unlock             | Unlock a channel                                                   | `/unlock [channel] [target]`                                |
+| /voicemove          | Move all users from a voice channel to another                     | `/voicemove [from] [to]`                                    |
+| /warn               | Warn a user                                                        | `/warn [user] [reason]`                                     |
+| /warnings           | Displays all the warnings of a user                                | `/warnings [user]`                                          |
+
+</details>
+
+## Role Administration
+
+<details>
+  <summary>Click here to expand</summary>
+
+| Command                 | Description                                                            | Usage                                                             |
+| ----------------------- | ---------------------------------------------------------------------- | ----------------------------------------------------------------- |
+| /buttonrole             | Create a button that assigns a role to a user when clicked             | `/buttonrole [channel] [type]`                                    |
+| /selectrole             | Create a dropdown menu that allows users to assign themselves a role   | `/selectrole [channel] [type]  [require_role_type] [placeholder]` |
+| /reactionrole add       | Add a role to a message that can be assigned to users when reacted     | `/reactionrole add [message_id] [channel]`                        |
+| /reactionrole remove    | Remove a reaction role that was previously assigned through a reaction | `/reactionrole remove [message_id] [emoji] [channel]`             |
+| /reactionrole removeall | Remove all reaction roles that were assigned through reactions         | `/reactionrole removeall  [channel] [message_id]`                 |
+| /temprole               | Assign temporary role to a user                                        | `/temprole [user] [role] [duration]`                            |
+| /role create            | Create a new role                                                      | `/role create [name] [color] [icon] [position]`                   |
+| /role delete            | Delete an existing role                                                | `/role delete [role] [reason]`                                    |
+| /role update            | Assign or revoke a role from user                                      | `/role update [target] [role]`                                   |
+| /role info              | Display information about a role                                       | `/role info [role]`                                               |
+| /role members           | Display a list of members who have been assigned a specific role       | `/role members [role] [attachment]`                               |
+| /role list              | Display a list of all roles in the server                              | `/role list [filter]`                                             |
+| /role removeall         | Remove a role from all users                                           | `/role removeall [role]`                                          |
+
+</details>
+
+## Automod
+
+<details>
+  <summary>Click here to expand</summary>
+
+| Command         | Description                           | Usage                    |
+| --------------- | ------------------------------------- | ------------------------ |
+| /automod        | Enables automatic moderation features | `/automod`               |
+| /banword add    | Add word to ban                       | `/banword add [word]`    |
+| /banword remove | Remove a banned word                   | `/banword remove [word]` |
+| /banword list   | List all banned words                 | `/banword list`          |
+| /banword clear  | Clear all banned words                | `/banword clear`         |
+
+</details>

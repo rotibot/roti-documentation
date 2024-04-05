@@ -1,0 +1,90 @@
+import { Steps } from 'nextra/components'
+
+# Frequently Asked Questions
+
+Got questions about R.O.T.I? Find your answers here! We're always happy to help you get the most out of our friendly bot. If you can't find what you need, don't hesitate to ask our helpful community!
+
+## <span className="txp">General</span>
+
+### <span className="yfq">Why is the bot named R.O.T.I ?</span>
+
+Oh, the name R.O.T.I? It's not just a random set of letters – it stands for `Reach Out the Imagination` Because why settle for anything less when you've got a bot that's truly exceptional and a bit cheeky too!
+
+### <span className="yfq">What does R.O.T.I do ? What are its features ?</span>
+
+R.O.T.I is a versatile Discord bot with features for moderation, utility, fun, customization, information retrieval and more. To explore each feature, check out the documentation for clear instructions and details.
+
+### <span className="yfq">How can I apply for the support team in R.O.T.I ?</span>
+
+We're always looking for enthusiastic members to help support the R.O.T.I community! Here's how to get involved:
+
+- `Keep an eye on announcements`
+
+We'll announce open support team positions in our announcement channel on our [Discord server](https://discord.gg/w5b7dYRMZH). These announcements will include an application form with instructions on how to apply.
+
+- `Be an active community member`
+
+Demonstrating helpfulness, knowledge of R.O.T.I's features, and a positive attitude within the server are great ways to show your potential as a support team member.
+
+**Qualities We Look For:**
+
+- You know R.O.T.I's commands and features inside and out, ready to share your expertise.
+- You enjoy helping others and have a friendly, positive attitude.
+- You're active in the server and committed to resolving user questions promptly.
+
+If we don't have anything open right now, don't worry! Keep being helpful and engaged, and we'll keep you in mind for future opportunities.
+
+### <span className="yfq">How can I apply for a server partnership with R.O.T.I ?</span>
+
+We love partnering with awesome communities! Here's how to get started:
+
+- Watch for partnership opening announcements on our Discord server. These announcements will include the application process and details.
+- Community owners or admins are eligible to apply for a partnership.
+- Partnered servers get listed on our Discord server and featured on our website.
+
+For in-depth information about partnership perks and criteria, click [here](https://rotibot.xyz/partners). We can't wait to review your application and potentially welcome you as a R.O.T.I partner!
+
+### <span className="yfq">Where is the dashboard for R.O.T.I ?</span>
+
+Our dashboard is currently in the final stages of development and will be released soon! This will give you a user-friendly web interface to manage R.O.T.I settings, customize features, and more.
+
+Stay tuned for announcements on our [Discord server](https://discord.gg/w5b7dYRMZH) or [social media](/getting-started/whats-next#our-social-media) for the official release date. We're excited to share it with you!
+
+## <span className="txp">Customization & Setup</span>
+
+### <span className="yfq">What is JSON and how to use it in embeds ?</span>
+
+JSON (JavaScript Object Notation) is a way to store information in a simple, organized format that's easy for computers (and humans!) to read.  Think of it like a recipe with ingredients and instructions. In Discord embeds, you use JSON to define things like:
+
+- Titles and Descriptions
+- Colors
+- Images and thumbnails
+- Author details
+- Fields
+- Footer
+
+and more ...
+
+If you want to create really fancy embeds, you'll need to get comfortable with JSON. For a deeper dive into how to use it, take a look at our detailed docs page [here](/basic-configuration/embeds#json-for-fine-tuning).
+
+### <span className="yfq">How to set up a verification system in R.O.T.I ?</span>
+
+R.O.T.I doesn't have a built-in verification system, but you can easily achieve a similar effect using self-roles. This helps keep your server safer from bots and spam accounts. Here's how:
+
+<Steps>
+#### Step 1 - Create a "Verified" role
+
+Create a new role and give this role access to all the channels in your server that you want verified members to see. Also, remove access from your "verification" channel for this role. This hides the verification channel once the role is assigned.
+
+#### Step 2 - Set up a self-role menu
+
+You can use either buttons (`/buttonrole`) or a dropdown menu (`/selectrole`) to enable users to choose the "Verified" role.
+
+#### Step 3 - Make the "Verified" role un-removable
+
+When creating the self-role, make sure to select the **Verify** type to prevent users from taking the role off themselves once they have it.
+</Steps>
+
+Now, when a new user joins, they'll only see the "verification" channel. Once they assign themselves the `Verified` role, they'll gain access to the rest of your server and the verification channel will disappear from their view!
+
+For more detailed instructions on setting up self-roles, check out our docs [here](/basic-configuration/self-roles).

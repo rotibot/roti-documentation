@@ -1,0 +1,25 @@
+{
+    "index": "Introduction",
+    "getting-started": "Getting Started",
+    "command-directory": "Command Directory",
+    "basic-configuration": "Basic Configuration",
+    "server-management": "Server Management",
+    "user-management": "User Management",
+    "fun-utilities": "Fun & Utilities",
+    "faq": "FAQ",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "refund-policy": "Refund Policy",
+    "partnership-program": "Partnership Program",
+    "commands": {
+      "title": "Commands",
+      "type": "page",
+      "href": "/command-directory/overview"
+    },
+    "website": {
+      "title": "Website",
+      "type": "page",
+      "href": "https://rotibot.xyz",
+      "newWindow": true
+    }
+  }

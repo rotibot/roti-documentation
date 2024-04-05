@@ -1,8 +1,0 @@
-{
-  "label": "Server Management",
-  "position": 4,
-  "link": {
-    "type": "generated-index",
-    "description": "This category contains a range of commands that empower server administrators to manage key aspects of their server. From fine-tuning server settings to handling suggestions and tickets, the Server Management category provides server administrators with the tools they need to create and maintain a well-managed and organized server environment."
-  }
-}

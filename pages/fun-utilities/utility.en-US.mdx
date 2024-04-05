@@ -1,0 +1,132 @@
+import { Users } from 'lucide-react'
+import { userAgent } from 'next/server'
+import { Steps } from 'nextra/components'
+import { Callout } from 'nextra/components'
+
+# Utility
+
+Upgrade your Discord server with these powerful utility commands! Manage AFK statuses, craft eye-catching announcements, set timely reminders, and customize embeds for a truly unique look.
+
+## Commands
+
+|   Command    |            Description            |                Usage                |
+| :----------: | :-------------------------------: | :---------------------------------: |
+|  /afk clear  |    Clears anyone's AFK status     |         `/afk clear [user]`         |
+|  /afk list   |        Lists all AFK users        |             `/afk list`             |
+|  /afk reset  |     Reset anyone's AFK status     |         `/afk reset [user]`         |
+|   /afk set   |        Set your AFK status        |         `/afk set [reason]`         |
+|  /announce   | Announce a message in the server  | `/announce [channel] [ping] [here]` |
+|    /embed    |          Create an embed          |         `/embed [channel]`          |
+|  /remindme   |    Helps remind you something     |     `/remindme [time] [reason]`     |
+
+## AFK Commands
+
+Manage your Away From Keyboard (**AFK**) status with ease! These commands allow you to signal when you're stepping away, include optional reasons for your absence, and provide commands (**for those with permissions**) to manage AFK statuses across the server. `/afk` command requires one of the following subcommands:
+
+<Steps>
+
+### Set AFK Status
+
+Let others know you're stepping away from the keyboard by setting your status as **AFK**. Include an optional reason to explain your absence (e.g., lunch break, going to sleep).
+
+```bash filename="Usage"
+/afk set [reason]
+```
+<Callout type="info">
+Your AFK status will be automatically removed when you type anything, use a bot command, or send attachments. Please be aware that the AFK status will not be removed within 30 seconds of setting it.
+</Callout>
+
+### Remove AFK Status
+
+This command removes the AFK status from yourself or another user (if you have the necessary permissions), meaning they will no longer be shown as `Away From Keyboard` to others.
+
+```bash filename="Usage"
+/afk clear [user]
+```
+### Reset AFK Reason
+
+Admins or users with appropriate permissions can use this command to clear the AFK reason of themselves or other users. The user will still appear as AFK, but they won't have an away message displayed.
+
+```bash filename="Usage"
+/afk reset [user]
+```
+### List AFK Users
+
+Get an overview of all users currently marked as AFK on the server, along with their away messages (if they have set one).
+
+```bash filename="Usage"
+/afk list
+```
+
+</Steps>
+
+## Announce
+
+Broadcast important messages with a visually distinct and customizable announcement. Attract attention with optional mentions, and create eye-catching layouts using the embed creation panel.
+
+```bash filename="Usage"
+/announce [channel] [ping] [here]
+```
+Options:
+
+- `channel`: The channel where you want to send the announcement.
+- `ping`: The role to mention (@everyone, @moderators, etc.).
+- `here`: Pings everyone who is online.
+
+Need help customizing the embed? Our in-depth embed creation guide offers advanced options and visual examples. [Click here](/basic-configuration/embeds) to explore the Embed creation guide:
+
+## Reminder
+
+This command sets a personal reminder that the bot will deliver to you as a direct message at a specified time. Perfect for remembering tasks, appointments, deadlines, or anything else you don't want to miss.
+
+```bash filename="Usage"
+/remindme [time] [reason]
+```
+Options:
+
+`[time]`: How long until you want to be reminded. Examples:
+- 5m (5 minutes)
+- 2h (2 hours)
+- 1d (1 day)
+- 30s (30 seconds)
+
+`[reason]`: What you want to be reminded about. Keep it clear and concise for easy recall.
+
+Example:
+
+```bash
+/remindme [1h] [Submit project proposal]
+```
+How Reminders Work:
+
+- The bot will send you a direct message when your specified time is up.
+- Reminders are private – only you will see them.
+
+## Embeds
+
+Embeds are visually rich message blocks that allow you to go beyond plain text within Discord.
+
+**They offer customizable elements like:**
+
+- Titles
+- Descriptions
+- Colors
+- Images (thumbnails and main images)
+- Fields (for structured info like name/value pairs)
+- Footers
+- Timestamps
+- Author information
+
+To access the complete documentation for Embed Creation, including detailed instructions and examples, please navigate to the **Basic Configuration** category. Use the following URL or [click here](/basic-configuration/embeds) to explore the documentation for Embeds:
+
+```
+https://docs.rotibot.xyz/basic-configuration/embeds
+```
+
+There, you will find step-by-step guidance on crafting and customizing embeds to enhance your server's communication. The Embed Creation section will teach you how to design rich, interactive messages using R.O.T.I, including how to set up the embed's title, description, color, footer, images, and more.
+
+Mastering Embed Creation enables you to present information attractively and efficiently, enhancing community interaction. Whether it's announcing upcoming events or showcasing user achievements, embeds offer a flexible and impactful way to share content with your community. Start creating captivating embeds today and witness the difference it makes in your community's interaction.
+
+## <span className="txp">Conclusion</span>
+
+This diverse collection of Utility commands empowers you to streamline Discord workflow, stay organized, and add a unique touch to your Discord server.  Experiment and see how they can enhance your experience!
