@@ -1,0 +1,122 @@
+import { Steps } from 'nextra/components'
+import { Callout } from 'nextra/components'
+
+# Changelog
+
+Date: May 18, 2024
+
+## [Ticket System](/server-management/ticket-system)
+
+<Steps>
+
+### Added Select Menu
+
+Users can now create tickets by selecting a category from a menu instead of just using buttons.
+
+### Fixed Category Display
+
+Ticket category now correctly displays during setup.
+
+</Steps>
+
+## [Suggestion System](/server-management/suggestion)
+
+<Steps>
+
+### Default Reaction Emojis
+
+Suggestion reactions now use default emojis instead of custom ones.
+
+### Reset Suggestion Count
+
+You can now reset the suggestion count for your server. Configure this with the `/suggestion config` command.
+
+</Steps>
+
+## [Giveaway](/fun-utilities/giveaway)
+
+<Steps>
+
+### Fixed Configuration Panel
+
+The `/giveaway config` panel buttons will no longer disappear after updating.
+
+### Added Previous Invites Count
+
+The bot can now count previous invites when validating giveaway participants. Configure this with the `/giveaway config` command.
+
+</Steps>
+
+## [Welcome](/basic-configuration/welcome)
+
+<Steps>
+
+### Added DM Welcome Feature
+
+R.O.T.I can now send welcome messages directly to users' DMs. Configure this with the `/welcome` command.
+
+</Steps>
+
+## [Role Administration](/user-management/role-administration)
+
+<Steps>
+
+### Added New Command
+
+Automatically reassign roles when users rejoin the server using `/stickyroles` command. You can also choose roles to exclude from automatic reassignment.
+
+### Combined Role Messages
+
+In `/selectrole`, role assignments and removals are now combined into one message instead of multiple messages.
+
+</Steps>
+
+## [Starboard](/basic-configuration/starboard)
+
+<Steps>
+
+### Added New Command
+
+Now you can configure the starboard system using a single command `/starboard config` for easier management.
+
+</Steps>
+
+## Other Significant Changes
+
+<Steps>
+
+### Fixed Mention Spam Filter
+
+R.O.T.I now detects and deletes messages with multiple mentions of the same user.
+
+### Professional Responses
+
+All bot responses are now more professional and detailed.
+
+### Updated Icons
+
+New and cooler icons for all categories.
+
+</Steps>
+
+## <span className="txg">Command Renaming</span>
+
+- `/report` is now `/bugreport` to clarify its purpose for reporting bugs to the R.O.T.I development team not server staff.
+
+<Callout type="info">
+A new command to report users directly to server staff will be added soon to help maintain a clean server environment.
+</Callout>
+
+- Changed `/log` command name to `/logs`.
+
+- Changed `/role give_or_remove` command name to `/role update`.
+
+## <span className="txr">Removed Commands</span>
+
+We have removed the following commands from R.O.T.I:
+
+- Cat & Dog command
+- Meme commands
+- Guess the Crown Game
+- Thread Commands
+- Delete all commands (stay tuned for something special in this category)
